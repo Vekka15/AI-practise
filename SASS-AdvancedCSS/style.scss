@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+$basic-size: 16px;
+$title-size: $basic-size*1.5;
+$subtitle-size: $basic-size*2;
+$col-width: 8.33%;
+
+// div.title{
+//   font-size: $title-size;
+//   color: red;
+// }
+//
+// div.subtitle{
+//    font-size: $title-size/2;
+// }
+
+.col-1{ width: $col-width;}
+.col-2{ width: $col-width*2;}
+.col-3{ width: $col-width*3;}
+.col-4{ width: $col-width*4;}
+.col-5{ width: $col-width*5;}
+.col-6{ width: $col-width*6;}
+.col-7{ width: $col-width*7;}
+.col-8{ width: $col-width*8;}
+.col-9{ width: $col-width*9;}
+.col-10{ width: $col-width*10;}
+.col-11{ width: $col-width*11;}
+.col-12{ width: $col-width*12;}
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    margin: 3%;
+}
+
+.subtitle{
+  font-size: $subtitle-size;
+}
+
+//mobile
+@media only screen and (max-width: 500px){
+body {
+font-size: $basic-size;
+color: blue;
+}
+$col-width: 30%;
+.col-3{ width: $col-width*3;}
+}
+
+//tablet
+@media only screen and (min-width: 500px) and (max-width: 964px){
+body{
+font-size: $basic-size;
+color: red;
+}
+.first{
+  color: green;
+  width: 90%;
+}
+$col-width: 30%;
+.second, .third{ width: 42%;}
+}
+
+//tablet
+
+@media only screen and (min-width: 964px){
+body{
+font-size: $basic-size;
+color: red;
+}
+
+}
